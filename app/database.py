@@ -1,27 +1,45 @@
-from sqlalchemy.ext.asyncio import create_async_engine, async_sessionmaker, AsyncSession
+# app/database.py
+
+import os
+from sqlalchemy.ext.asyncio import create_async_engine, async_sessionmaker
 from sqlalchemy.orm import declarative_base
 from sqlalchemy.pool import NullPool
-from .config import DATABASE_URL
 
-connect_args = {"check_same_thread": False} if DATABASE_URL.startswith("sqlite") else {}
+DATABASE_URL = os.getenv("DATABASE_URL")
 
-# IMPORTANT FOR WINDOWS + PYTEST + ASYNCPG:
-# pytest-asyncio commonly creates/closes an event loop per test. Reusing asyncpg
-# pooled connections across those loops causes: RuntimeError: Event loop is closed
-# and AttributeError: 'NoneType' object has no attribute 'send'. NullPool avoids
-# cross-loop connection reuse while keeping the runtime API production-compatible.
-engine_kwargs = {
-    "echo": False,
-    "connect_args": connect_args,
-}
-if DATABASE_URL.startswith("postgresql+asyncpg"):
-    engine_kwargs["poolclass"] = NullPool
-else:
-    engine_kwargs["pool_pre_ping"] = True
+if not DATABASE_URL:
+    raise RuntimeError("DATABASE_URL environment variable is not set")
 
-engine = create_async_engine(DATABASE_URL, **engine_kwargs)
-AsyncSessionLocal = async_sessionmaker(engine, expire_on_commit=False, class_=AsyncSession)
+# Support Render/Neon URLs copied as postgresql://
+if DATABASE_URL.startswith("postgresql://"):
+    DATABASE_URL = DATABASE_URL.replace("postgresql://", "postgresql+asyncpg://", 1)
+
+connect_args = {}
+
+# Neon/Supabase usually needs SSL.
+# asyncpg accepts ssl=True better than ssl=require in connect_args.
+if "neon.tech" in DATABASE_URL or "supabase.com" in DATABASE_URL:
+    DATABASE_URL = DATABASE_URL.replace("?sslmode=require", "")
+    DATABASE_URL = DATABASE_URL.replace("?ssl=require", "")
+    connect_args = {"ssl": True}
+
+engine = create_async_engine(
+    DATABASE_URL,
+    echo=False,
+    pool_pre_ping=True,
+    poolclass=NullPool,
+    connect_args=connect_args,
+)
+
+AsyncSessionLocal = async_sessionmaker(
+    bind=engine,
+    expire_on_commit=False,
+    autoflush=False,
+    autocommit=False,
+)
+
 Base = declarative_base()
+
 
 async def get_db():
     async with AsyncSessionLocal() as session:
