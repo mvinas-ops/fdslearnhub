@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # fastapi_app
+=======
+# FDSLearnhub
+>>>>>>> 5a8ffecf584059c98f81f1a293609f14d059c1d4
 
 
 
@@ -10,18 +14,27 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 
 ## Add your files
 
+<<<<<<< HEAD
 * [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
+=======
+* [Create](https://docs.gitlab.com/user/project/repository/web_editor/#create-a-file) or [upload](https://docs.gitlab.com/user/project/repository/web_editor/#upload-a-file) files
+>>>>>>> 5a8ffecf584059c98f81f1a293609f14d059c1d4
 * [Add files using the command line](https://docs.gitlab.com/topics/git/add_files/#add-files-to-a-git-repository) or push an existing Git repository with the following command:
 
 ```
 cd existing_repo
+<<<<<<< HEAD
 git remote add origin https://git.dswd.gov.ph/MSBongabong/fastapi_app.git
+=======
+git remote add origin https://git.dswd.gov.ph/mvinas/fdslearnhub.git
+>>>>>>> 5a8ffecf584059c98f81f1a293609f14d059c1d4
 git branch -M main
 git push -uf origin main
 ```
 
 ## Integrate with your tools
 
+<<<<<<< HEAD
 * [Set up project integrations](https://git.dswd.gov.ph/MSBongabong/fastapi_app/-/settings/integrations)
 
 ## Collaborate with your team
@@ -30,17 +43,35 @@ git push -uf origin main
 * [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
 * [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
 * [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
+=======
+* [Set up project integrations](https://git.dswd.gov.ph/mvinas/fdslearnhub/-/settings/integrations)
+
+## Collaborate with your team
+
+* [Invite team members and collaborators](https://docs.gitlab.com/user/project/members/)
+* [Create a new merge request](https://docs.gitlab.com/user/project/merge_requests/creating_merge_requests/)
+* [Automatically close issues from merge requests](https://docs.gitlab.com/user/project/issues/managing_issues/#closing-issues-automatically)
+* [Enable merge request approvals](https://docs.gitlab.com/user/project/merge_requests/approvals/)
+>>>>>>> 5a8ffecf584059c98f81f1a293609f14d059c1d4
 * [Set auto-merge](https://docs.gitlab.com/user/project/merge_requests/auto_merge/)
 
 ## Test and Deploy
 
 Use the built-in continuous integration in GitLab.
 
+<<<<<<< HEAD
 * [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/)
 * [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
 * [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
 * [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
 * [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+=======
+* [Get started with GitLab CI/CD](https://docs.gitlab.com/ci/quick_start/)
+* [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/user/application_security/sast/)
+* [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/topics/autodevops/requirements/)
+* [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/user/clusters/agent/)
+* [Set up protected environments](https://docs.gitlab.com/ci/environments/protected_environments/)
+>>>>>>> 5a8ffecf584059c98f81f1a293609f14d059c1d4
 
 ***
 
