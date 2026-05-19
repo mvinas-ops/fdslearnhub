@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+sqlalchemy>=2.0
+asyncpg
+aiosqlite
+python-jose[cryptography]
+passlib[argon2]
+pydantic[email]
+python-dotenv
+python-multipart
+httpx
+pytest
+pytest-asyncio
+bandit

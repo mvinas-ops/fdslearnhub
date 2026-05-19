@@ -1,0 +1,67 @@
+stages:
+  - test
+  - build
+  - deploy
+  - run
+
+variables:
+  IMAGE_NAME: registry-git.dswd.gov.ph/msbongabong/fastapi_app
+  IMAGE_TAG: staging-$CI_COMMIT_SHORT_SHA
+  CONTAINER_NAME: fastapi_app_container
+  PORT: 10101
+
+
+# =========================
+# UNIT TEST (DOCKER)
+# =========================
+unit-tests:
+  stage: test
+  tags:
+    - shell
+  script:
+    - echo "Building test image..."
+    - docker build -f Dockerfile.test -t fastapi-test .
+
+    - echo "Running unit tests..."
+    - docker run --rm -e DATABASE_URL="$DATABASE_URL" fastapi-test
+
+# =========================
+# BUILD DOCKER IMAGE
+# =========================
+docker-build:
+  stage: build
+  tags:
+    - shell
+  script:
+    - echo "Starting Docker build on shell executor..."
+    - docker info
+    - docker build -t $IMAGE_NAME:$IMAGE_TAG .
+
+# =========================
+# Push Docker Image
+# =========================
+docker-push:
+  stage: deploy
+  tags:
+    - shell
+  script:
+    - echo "Pushing Docker image to registry..."
+    - docker login registry-git.dswd.gov.ph -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
+    - docker push $IMAGE_NAME:$IMAGE_TAG
+
+# =========================
+# Run Docker Container
+# =========================
+docker-run:
+  stage: run
+  tags:
+    - shell
+  script:
+    - echo "Pulling latest Docker images from registry..."
+    - docker compose pull  # pull latest images defined in docker-compose.yml
+    - echo "Stopping old containers if they exist..."
+    - docker compose down || true
+    - echo "Starting containers with Docker Compose..."
+    - docker compose up -d --force-recreate
+    - echo "Containers started successfully. Listing running containers:"
+    - docker ps

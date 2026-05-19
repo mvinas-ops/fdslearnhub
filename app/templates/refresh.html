@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Refresh Token</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h2>Refresh Token</h2>
+    <p style="color:red">{{ message }}</p>
+    <form method="post">
+        <input type="text" name="refresh_token" placeholder="Enter Refresh Token" required><br><br>
+        <button type="submit">Refresh</button>
+    </form>
+
+    {% if access_token %}
+    <h3>New Tokens</h3>
+    <p><strong>Access Token:</strong> {{ access_token }}</p>
+    <p><strong>Refresh Token:</strong> {{ refresh_token }}</p>
+    {% endif %}
+
+    <p><a href="/">Back to Home</a></p>
+</body>
+</html>

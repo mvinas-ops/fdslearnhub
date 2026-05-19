@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  api:
+    image: registry-git.dswd.gov.ph/msbongabong/fastapi_app:staging-$CI_COMMIT_SHORT_SHA
+    container_name: fastapi_app_ods
+    ports:
+      - "10101:8000"
+    restart: always
+    environment:
+      DATABASE_URL: ${DATABASE_URL}
+      JWT_SECRET: ${JWT_SECRET}
+      RECAPTCHA_SECRET: ${RECAPTCHA_SECRET}

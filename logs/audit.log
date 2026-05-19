@@ -1,0 +1,49 @@
+2026-05-05 08:45:32,520 | {"user": "anonymous", "method": "POST", "endpoint": "/api/payroll/", "status": 200, "ip": "127.0.0.1", "body": null}
+2026-05-05 08:45:32,555 | {"user": "anonymous", "method": "POST", "endpoint": "/api/payroll/wgrants", "status": 200, "ip": "127.0.0.1", "body": null}
+2026-05-05 08:45:32,563 | {"user": "anonymous", "method": "POST", "endpoint": "/api/payroll/grants", "status": 200, "ip": "127.0.0.1", "body": null}
+2026-05-05 08:45:32,572 | {"user": "anonymous", "method": "POST", "endpoint": "/api/payroll/test-pii", "status": 200, "ip": "127.0.0.1", "body": {"full_name": "Juan Dela Cruz", "email": "juan@test.com", "phone": "09171234567"}}
+2026-05-05 08:48:51,979 | {"user": "anonymous", "method": "POST", "endpoint": "/api/payroll/", "status": 200, "ip": "127.0.0.1", "body": null}
+2026-05-05 08:48:52,015 | {"user": "anonymous", "method": "POST", "endpoint": "/api/payroll/wgrants", "status": 200, "ip": "127.0.0.1", "body": null}
+2026-05-05 08:48:52,024 | {"user": "anonymous", "method": "POST", "endpoint": "/api/payroll/grants", "status": 200, "ip": "127.0.0.1", "body": null}
+2026-05-05 08:48:52,034 | {"user": "anonymous", "method": "POST", "endpoint": "/api/payroll/test-pii", "status": 200, "ip": "127.0.0.1", "body": {"full_name": "Juan Dela Cruz", "email": "juan@test.com", "phone": "09171234567"}}
+2026-05-05 08:52:10,783 | {"user": "anonymous", "method": "POST", "endpoint": "/api/payroll/", "status": 200, "ip": "127.0.0.1", "body": null}
+2026-05-05 08:52:10,791 | {"user": "anonymous", "method": "POST", "endpoint": "/api/payroll/wgrants", "status": 200, "ip": "127.0.0.1", "body": null}
+2026-05-05 08:52:10,798 | {"user": "anonymous", "method": "POST", "endpoint": "/api/payroll/grants", "status": 200, "ip": "127.0.0.1", "body": null}
+2026-05-05 08:52:10,805 | {"user": "anonymous", "method": "POST", "endpoint": "/api/payroll/test-pii", "status": 200, "ip": "127.0.0.1", "body": {"full_name": "Juan Dela Cruz", "email": "juan@test.com", "phone": "09171234567"}}
+2026-05-05 10:38:44,176 | {"user": "anonymous", "method": "POST", "endpoint": "/api/payroll/wgrants", "status": 200, "ip": "127.0.0.1", "body": null}
+2026-05-05 10:38:44,185 | {"user": "anonymous", "method": "POST", "endpoint": "/api/payroll/grants", "status": 200, "ip": "127.0.0.1", "body": null}
+2026-05-05 10:38:44,191 | {"user": "anonymous", "method": "POST", "endpoint": "/api/payroll/recovery", "status": 200, "ip": "127.0.0.1", "body": null}
+2026-05-05 10:41:48,600 | {"user": "anonymous", "method": "POST", "endpoint": "/api/payroll/wgrants", "status": 200, "ip": "127.0.0.1", "body": null}
+2026-05-05 10:41:48,608 | {"user": "anonymous", "method": "POST", "endpoint": "/api/payroll/grants", "status": 200, "ip": "127.0.0.1", "body": null}
+2026-05-05 10:41:48,615 | {"user": "anonymous", "method": "POST", "endpoint": "/api/payroll/recovery", "status": 200, "ip": "127.0.0.1", "body": null}
+2026-05-05 10:41:58,502 | {"user": "anonymous", "method": "GET", "endpoint": "/favicon.ico", "status": 200, "ip": "172.23.144.1", "body": null}
+2026-05-05 10:42:01,926 | {"user": "anonymous", "method": "GET", "endpoint": "/docs", "status": 200, "ip": "172.23.144.1", "body": null}
+2026-05-05 10:42:02,074 | {"user": "anonymous", "method": "GET", "endpoint": "/openapi.json", "status": 200, "ip": "172.23.144.1", "body": null}
+2026-05-05 10:42:09,709 | {"user": "anonymous", "method": "GET", "endpoint": "/docs", "status": 200, "ip": "172.23.144.1", "body": null}
+2026-05-05 10:42:09,777 | {"user": "anonymous", "method": "GET", "endpoint": "/openapi.json", "status": 200, "ip": "172.23.144.1", "body": null}
+2026-05-05 10:43:12,102 | {"user": "anonymous", "method": "POST", "endpoint": "/auth/register", "status": 200, "ip": "172.23.144.1", "body": {"email": "msbongabong@dswd.gov.ph", "role": "user"}}
+2026-05-05 10:46:16,055 | {"user": "anonymous", "method": "GET", "endpoint": "/docs", "status": 200, "ip": "172.23.144.1", "body": null}
+2026-05-05 10:46:16,119 | {"user": "anonymous", "method": "GET", "endpoint": "/openapi.json", "status": 200, "ip": "172.23.144.1", "body": null}
+2026-05-05 10:46:36,552 | {"user": "anonymous", "method": "POST", "endpoint": "/auth/login", "status": 200, "ip": "172.23.144.1", "body": {"email": "msbongabong@dswd.gov.ph"}}
+2026-05-05 10:47:09,245 | {"user": "2", "method": "POST", "endpoint": "/api/payroll/grants", "status": 503, "ip": "172.23.144.1", "body": null}
+2026-05-05 10:51:20,642 | {"user": "2", "method": "POST", "endpoint": "/api/payroll/grants", "status": 503, "ip": "172.23.144.1", "body": null}
+2026-05-05 10:51:23,850 | {"user": "2", "method": "POST", "endpoint": "/api/payroll/grants", "status": 503, "ip": "172.23.144.1", "body": null}
+2026-05-05 10:53:07,859 | {"user": "2", "method": "POST", "endpoint": "/api/payroll/grants", "status": 503, "ip": "172.23.144.1", "body": null}
+2026-05-05 11:09:14,127 | {"user": "anonymous", "method": "GET", "endpoint": "/docs", "status": 200, "ip": "172.23.144.1", "body": null}
+2026-05-05 11:09:14,212 | {"user": "anonymous", "method": "GET", "endpoint": "/openapi.json", "status": 200, "ip": "172.23.144.1", "body": null}
+2026-05-05 11:09:36,345 | {"user": "anonymous", "method": "POST", "endpoint": "/auth/login", "status": 200, "ip": "172.23.144.1", "body": {"email": "msbongabong@dswd.gov.ph"}}
+2026-05-05 11:10:18,612 | {"user": "2", "method": "POST", "endpoint": "/api/payroll/grants", "status": 200, "ip": "172.23.144.1", "body": null}
+2026-05-05 11:16:49,151 | {"user": "anonymous", "method": "GET", "endpoint": "/docs", "status": 200, "ip": "172.23.144.1", "body": null}
+2026-05-05 11:16:49,224 | {"user": "anonymous", "method": "GET", "endpoint": "/openapi.json", "status": 200, "ip": "172.23.144.1", "body": null}
+2026-05-05 11:17:23,988 | {"user": "2", "method": "POST", "endpoint": "/api/payroll/grants", "status": 200, "ip": "172.23.144.1", "body": null}
+2026-05-05 11:20:22,382 | {"user": "anonymous", "method": "GET", "endpoint": "/docs", "status": 200, "ip": "172.23.144.1", "body": null}
+2026-05-05 11:20:22,452 | {"user": "anonymous", "method": "GET", "endpoint": "/openapi.json", "status": 200, "ip": "172.23.144.1", "body": null}
+2026-05-05 11:22:26,795 | {"user": "anonymous", "method": "POST", "endpoint": "/api/payroll/grants", "status": 200, "ip": "172.23.144.1", "body": null}
+2026-05-05 11:23:05,831 | {"user": "2", "method": "POST", "endpoint": "/api/payroll/grants", "status": 200, "ip": "172.23.144.1", "body": null}
+2026-05-05 11:23:32,900 | {"user": "2", "method": "POST", "endpoint": "/api/payroll/grants", "status": 200, "ip": "172.23.144.1", "body": null}
+2026-05-05 11:25:55,090 | {"user": "anonymous", "method": "GET", "endpoint": "/docs", "status": 200, "ip": "172.23.144.1", "body": null}
+2026-05-05 11:25:55,163 | {"user": "anonymous", "method": "GET", "endpoint": "/openapi.json", "status": 200, "ip": "172.23.144.1", "body": null}
+2026-05-05 15:32:10,817 | {"user": "anonymous", "method": "POST", "endpoint": "/api/payroll/grants", "status": 200, "ip": "127.0.0.1", "body": null}
+2026-05-05 15:32:10,829 | {"user": "anonymous", "method": "POST", "endpoint": "/api/payroll/recovery", "status": 200, "ip": "127.0.0.1", "body": null}
+2026-05-05 15:34:02,127 | {"user": "anonymous", "method": "POST", "endpoint": "/api/payroll/grants", "status": 200, "ip": "127.0.0.1", "body": null}
+2026-05-05 15:34:02,136 | {"user": "anonymous", "method": "POST", "endpoint": "/api/payroll/recovery", "status": 200, "ip": "127.0.0.1", "body": null}

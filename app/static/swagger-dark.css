@@ -1,0 +1,63 @@
+/* Dark background for the entire page */
+body {
+    background-color: #1e1e1e !important;
+    color: #c5c6c7 !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+/* Top bar */
+.swagger-ui .topbar {
+    background-color: #0b0c10 !important;
+}
+
+/* API Info Section */
+.swagger-ui .info {
+    color: #66fcf1 !important;
+}
+
+/* Operation block card background and rounded corners */
+.swagger-ui .opblock {
+    background-color: #1f2833 !important;
+    border-radius: 8px !important;
+    margin: 10px 0 !important;
+    padding: 10px !important;
+}
+
+/* HTTP method labels colors */
+.swagger-ui .opblock-summary-method.get {
+    background-color: #45a29e !important;
+    color: #fff !important;
+}
+.swagger-ui .opblock-summary-method.post {
+    background-color: #66fcf1 !important;
+    color: #000 !important;
+}
+.swagger-ui .opblock-summary-method.put {
+    background-color: #ffb86c !important;
+    color: #000 !important;
+}
+.swagger-ui .opblock-summary-method.delete {
+    background-color: #ff5555 !important;
+    color: #fff !important;
+}
+
+/* Endpoint summary text */
+.swagger-ui .opblock-summary {
+    color: #c5c6c7 !important;
+}
+
+/* Description inside endpoint blocks */
+.swagger-ui .opblock-description-wrapper {
+    color: #66fcf1 !important;
+}
+
+/* Tabs (Authorize, etc.) active link */
+.swagger-ui .tab li.active a {
+    color: #45a29e !important;
+}
+
+/* Hide small scrollbars on endpoint cards */
+.swagger-ui .opblock .opblock-body pre {
+    background-color: #0b0c10 !important;
+    color: #c5c6c7 !important;
+}
